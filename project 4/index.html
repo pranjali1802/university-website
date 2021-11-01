@@ -8,17 +8,21 @@
     <title>University Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/61/612/612464/learning-o.png?1439945374" alt=""></a>
+            <a href="index.html"><img
+                    src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/61/612/612464/learning-o.png?1439945374"
+                    alt=""></a>
             <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -27,14 +31,82 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
             <h1>World's Biggest University</h1>
             <p>Live as if you were to die tomorrow. Learn as if you were to live forever</p>
-            <a href="">Visit Us To know More</a>
+            <a href="" class="hero-btn">Visit Us To know More</a>
         </div>
     </section>
+
+    <!--course-->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Introduction To Psychology <br>Machine Learning <br>Management Skills <br>Marketing Skills</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quia fugiat commodi
+                    laboriosam aut voluptates temporibus at ipsum iusto non incidunt delectus excepturi explicabo
+                    voluptatum necessitatibus rerum, velit dolore?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quia fugiat commodi
+                    laboriosam aut voluptates temporibus at ipsum iusto non incidunt delectus excepturi explicabo
+                    voluptatum necessitatibus rerum, velit dolore?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quia fugiat commodi
+                    laboriosam aut voluptates temporibus at ipsum iusto non incidunt delectus excepturi explicabo
+                    voluptatum necessitatibus rerum, velit dolore?</p>
+            </div>
+        </div>
+    </section>
+    <!--Campus-->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p> Our Global Campus connects student around the world to collaborate, discuss and learn together everyday. <br> Our convenient online format, flexible class schedules, and relevant degree programs have made higher <br> education accessible to the busy adult looking to find their own path to achieving their goals.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://www.radford.edu/content/dam/radford/news/2020/october/GreenCampus2021_FBOG.jpg" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="https://www.umontreal.ca/public/www/_processed_/csm_galerie_campusMIL-001_19b474ef38.jpg" alt="">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="https://s3images.coroflot.com/user_files/individual_files/original_207692_uCtWIn3YtEIGUQ3KhqueNBq6O.jpg" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Javascript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
