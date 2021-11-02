@@ -204,3 +204,22 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 .layer:hover he{
     bottom: 49%;
 }
+/*facilities*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.facilities-col img{
+    width: 100%;
+    display: block;
+}
+
