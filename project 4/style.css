@@ -278,7 +278,7 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
     padding: 100px 0;
 }
 .cta h1{
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-bottom: 40px;
     padding: 0;  
 }
